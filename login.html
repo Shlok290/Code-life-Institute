@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Register Modal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #64748b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .modal-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 420px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 22px;
+            color: #94a3b8;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .close-btn:hover {
+            color: #334155;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .tabs-header {
+            display: flex;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 25px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            text-align: center;
+            padding-bottom: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #94a3b8;
+            cursor: pointer;
+            position: relative;
+            bottom: -2px; 
+        }
+
+        #tab-login:checked ~ .tabs-header label[for="tab-login"] {
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+        }
+
+        #tab-register:checked ~ .tabs-header label[for="tab-register"] {
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+        }
+
+        .form-content {
+            display: none; 
+        }
+
+        #tab-login:checked ~ #login-form {
+            display: block;
+        }
+
+        #tab-register:checked ~ #register-form {
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 11px;
+            font-weight: bold;
+            color: #475569;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #2563eb;
+        }
+
+        .btn-blue {
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .btn-blue:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-dark {
+            width: 100%;
+            background-color: #0b1329;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .btn-dark:hover {
+            background-color: #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="modal-card">
+        <span class="close-btn">&times;</span>
+
+        <!-- Radio Inputs (Behind the scene tab swtiching ke liye) -->
+        <input type="radio" name="auth-tab" id="tab-login" checked>
+        <input type="radio" name="auth-tab" id="tab-register">
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-header">
+            <label for="tab-login" class="tab-btn">Login</label>
+            <label for="tab-register" class="tab-btn">Register</label>
+        </div>
+
+        <!-- 1. LOGIN FORM -->
+        <form id="login-form" class="form-content">
+            <div class="form-group">
+                <label>STUDENT enrollment number</label>
+                <input type="text" placeholder="Enter enrollment number" required>
+            </div>
+
+            <div class="form-group">
+                <label>PASSWORD</label>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn-blue">Account Login</button>
+        </form>
+
+        <!-- 2. REGISTER FORM -->
+        <form id="register-form" class="form-content">
+            <div class="form-group">
+                <label>FULL STUDENT NAME</label>
+                <input type="text" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Student Phone Number</label>
+                <input type="number" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label>EMAIL ADDRESS</label>
+                <input type="email" placeholder="student@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>CREATE PASSWORD</label>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label>Confirm PASSWORD</label>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn-dark">Create Student Account</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

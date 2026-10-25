@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code life Institute</title>
+    <style>
+        #header{
+            background-color: rgb(16, 23, 92);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            }
+        .p{
+            text-decoration: none;
+            color: rgb(184, 184, 239);
+            }
+        .login {
+            background-color: #2563eb; 
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 8px; 
+            text-decoration: none; 
+            display: inline-block; 
+          }
+
+        .login:hover {
+            background-color: #1d4ed8;
+          }
+        .main1{
+            border: solid;
+            margin: 25px auto;
+            width: 90%;
+            color: white;
+            margin-top: 20px;
+            height: 300px;
+            background-color: rgb(44, 65, 254);
+            border-radius: 15px;
+
+        }
+    
+        .x{
+            background: rgb(255, 255, 255, 0.2);
+            padding: 4px 10px;
+            border-radius: 10px;
+            font-size: 10px;
+            width: 80px;
+            margin-left: 15px;
+        }
+        .v{
+            margin-left: 10px;
+        }
+        .btn{
+            padding: 12px 24px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            margin-left: 50px;
+        }
+        .btn1{
+            background-color: #ffffff;
+            color: #1a73e8;
+        }
+        .btn2{
+            background-color: #0b3fa3;
+            color: #ffffff;
+        }
+        .main2{
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+          color: #1e293b;
+          max-width: 1200px;
+          margin: 20px auto;
+        }
+        .font-demo-section h2 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 8px;
+          color: #0f172a;
+        }
+
+        .font-demo-section .subtitle {
+          color: #475569;
+          font-size: 14px;
+          margin-bottom: 24px;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        }
+
+        .card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        transition: all 0.2s ease-in-out;
+        }
+
+        .card:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .tag-title {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 700;
+        color: #2563eb;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+        }
+
+        .card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #334155;
+        margin: 0;
+        }
+        .site-footer {
+        background-color: #0f172a;
+        color: #94a3b8;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 13px;
+        margin-top: 40px;
+        }
+</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Code life Institute</h1>
+        <nav>
+        <a href="index.html" class="p">Home</a>&nbsp;&nbsp;&nbsp;
+        <a href="cni.html" class="p">Courses</a>&nbsp;&nbsp;&nbsp;
+        <a href="ba.html" class="p">Book Appointment</a>&nbsp;&nbsp;&nbsp;
+        <a href="lnt.html" class="p">Top students</a>&nbsp;&nbsp;&nbsp;
+        <a href="contact.html" class="p">Contact Us</a>&nbsp;&nbsp;&nbsp;
+        <a href="login.html" class="login">Login/Register</a>&nbsp;&nbsp;&nbsp;
+        </nav>
+    </div>
+    <div class="main1">
+            <h5 class="x">Welcome  Students</h5>
+            <h1 class="v">Master Modern Web Development at Code Life Institute</h1>
+            <p class="v">Welcome to the Code Life Institute official portal, a comprehensive web development project meticulously crafted to showcase the foundational principles of modern front-end design and structural markup. This platform serves as a complete learning repository, demonstrating an extensive array of HTML tags, text formatting elements, complex nested lists, structured data tables, and integrated multimedia assets. Designed with precision and responsiveness in mind, every page seamlessly connects through a unified navigation bar, providing visitors with an intuitive and immersive browsing experience while highlighting core web development standards.</p>
+            <div id="btn">
+                <a href="cni.html" class="btn btn1">Book Courses</a>
+                <a href="ba.html" class="btn btn2">Book Appointment</a>
+            </div>
+    </div>
+    <div class="main2">
+  <h2>Comprehensive Font Formatting Tags Demonstration</h2>
+  <p>Required inline HTML text styling elements tested below:</p>
+  <hr>
+
+  <div class="grid-container">
+
+    <div class="card">
+      <span class="tag-title">&lt;B&gt; &amp; &lt;STRONG&gt;</span>
+      <p>This text is normal, but <b>this part is bold (b tag)</b> and <strong>this part is strong (strong tag)</strong> for importance.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag-title">&lt;I&gt; &amp; &lt;EM&gt;</span>
+      <p>We can use <i>italics for titles or foreign words (i tag)</i> and <em>emphasis for stressed emphasis (em tag)</em>.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag-title">&lt;U&gt; &amp; &lt;INS&gt;</span>
+      <p>To highlight specific lines, we use <u>underlined text (u tag)</u> or <ins>inserted newly added text (ins tag)</ins>.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag-title">&lt;MARK&gt; &amp; &lt;SMALL&gt;</span>
+      <p>You can <mark>highlight important keywords</mark> with yellow backgrounds, or display fine print using the <small>small tag</small>.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag-title">&lt;DEL&gt; &amp; &lt;S&gt;</span>
+      <p>Outdated pricing or removed items are shown with <del>deleted strike-through text</del> or <s style="text-decoration: line-through;">strikethrough (s tag)</s>.</p>
+    </div>
+
+    <div class="card">
+      <span class="tag-title">&lt;SUP&gt; &amp; &lt;SUB&gt; &amp; &lt;CODE&gt;</span>
+      <p>Mathematical formulas like E=mc<sup>2</sup>, chemical formulas like H<sub>2</sub>O, and inline snippet <code>console.log('Test');</code>.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Code Life Institute. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

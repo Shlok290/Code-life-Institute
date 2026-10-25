@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        #header{
+            background-color: rgb(16, 23, 92);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            } 
+        .p{
+            text-decoration: none;
+            color: rgb(184, 184, 239);
+            }
+        .login {
+            background-color: #2563eb; 
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 8px; 
+            text-decoration: none; 
+            display: inline-block; 
+          }
+
+        .login:hover {
+            background-color: #1d4ed8;
+          }
+        #mainp5{
+            width: 85%;
+            margin: auto;
+        }
+
+        #x{
+             display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        #boxa{
+            flex: 1;
+            background-color: #ffffff;
+            
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .box1{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .box2{
+             width: 100%;
+             height: 100px;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .box3{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(28, 50, 250);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+        }
+        .site-footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Code life Institute</h1>
+        <nav>
+        <a href="index.html" class="p">Home</a>&nbsp;&nbsp;&nbsp;
+        <a href="cni.html" class="p">Courses</a>&nbsp;&nbsp;&nbsp;
+        <a href="ba.html" class="p">Book Appointment</a>&nbsp;&nbsp;&nbsp;
+        <a href="lnt.html" class="p">Top students</a>&nbsp;&nbsp;&nbsp;
+        <a href="contact.html" class="p">Contact Us</a>&nbsp;&nbsp;&nbsp;
+        <a href="login.html" class="login">Login/Register</a>&nbsp;&nbsp;&nbsp;
+        </nav>
+    </div>
+    <div id="mainp5">
+        <h1>Contact Us</h1>
+        <p>Get in touch with the academic evaluation committee or submit your feedback.</p>
+        <hr>
+        <form>
+        <div id="x">
+        
+        <div id="boxa">
+        <label>Your Full Name</label><br>
+        <input type="text" class="box1" placeholder="enter student name" required><br><br>
+        <label>Email address</label><br>
+        <input type="email" class="box1" placeholder="student@college.com" required><br><br>
+        <label>Message</label><br>
+        <input type="text" class="box2" placeholder="Message......."><br><br>
+
+        <button type="submit" class="box3">submit</button>
+        </div></form>
+
+        <div id="boxa">
+            <h1>Department Contact Details</h1>
+            <p>Code life Institute of Engineering & Technology, Department of Computer Science & Web Engineering.</p> <hr> <br>
+            <p><strong>Email:</strong> evaluation@codelife-academics.org <br> <strong>Phone:</strong> +91 9979769800 <br> <strong>Time:</strong>Mon - Fri: 9:00 AM - 5:00 PM</p>
+        </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+  <p>&copy; 2026 Code Life Institute. All rights reserved.</p>
+</footer>
+</body>
+</html>
